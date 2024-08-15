@@ -1,0 +1,159 @@
+{
+  "data": {
+    "assetData": [
+      {
+        "id": 434,
+        "assetCode": "BDS.DHH.906886",
+        "assetType": "V404",
+        "assetTypeName": "Căn hộ chung cư",
+        "assetGroup": "V001",
+        "assetGroupName": "Bất động sản",
+        "assetName": "Căn hộ chung cư số HN_906886 tại Address 906886, Phường Lý Thái Tổ, Quận Hoàn Kiếm, Thành phố Hà Nội theo GCN đăng ký xe/ số DOC-906886 do CA HA NOI ngày 05/10/2023, đứng tên Nguyễn Văn Mạnh",
+        "ownerType": "V001",
+        "assetAdditionalInfo": {
+          "realEstateInfo": {
+            "id": 307,
+            "provinceCode": "40",
+            "provinceName": "Thành phố Hà Nội",
+            "districtCode": "749",
+            "districtName": "Quận Hoàn Kiếm",
+            "wardCode": "11907",
+            "wardName": "Phường Lý Thái Tổ",
+            "houseNumber": "HN_906886",
+            "floor": "FL906886",
+            "landParcel": "LP906886",
+            "investorInformation": "INVEST_906886",
+            "description": "Bat dong san: 906886",
+            "buildingWork": false,
+            "futureAsset": true,
+            "streetNumber": "Address 906886"
+          },
+          "transportationInfo": null,
+          "stockInfo": null,
+          "legalDocumentInfo": {
+            "id": 301,
+            "docValue": "DOC-906886",
+            "docType": "V004",
+            "docName": "GCN đăng ký xe",
+            "issuedBy": "CA HA NOI",
+            "dateOfIssue": "2023-10-05T00:00:00",
+            "description": ""
+          },
+          "collateralAssetInfo": {
+            "id": 290,
+            "proposalCollateralValue": 8000000000.00,
+            "valuationGuaranteed": 800000000.00,
+            "ltv": 45.0,
+            "description": null
+          },
+          "ownerInfo": [
+            {
+              "customerId": 16919,
+              "customerRefCode": "1111",
+              "customerName": "Nguyễn Văn Mạnh",
+              "relationshipCode": "V017",
+              "relationshipName": "Khách hàng"
+            }
+          ]
+        }
+      },
+      {
+        "id": 435,
+        "assetCode": "9098i 78",
+        "assetType": "V604",
+        "assetTypeName": "Tàu biển",
+        "assetGroup": "V002",
+        "assetGroupName": "Phương tiện vận tải và xe chuyên dùng",
+        "assetName": "Phương tiện vận tải và xe chuyên dùng có Số khung/số seri 767, số máy 65, 56, 56 theo GCN QSH nhà ở và QSD đất ở/ số 65 do 56 ngày 10/10/2023, đứng tên Nguyễn Văn A",
+        "ownerType": "V005",
+        "assetAdditionalInfo": {
+          "realEstateInfo": null,
+          "transportationInfo": {
+            "id": 106,
+            "address": null,
+            "seriNumber": "767",
+            "machineNumber": "65",
+            "plateNumber": "56",
+            "description": "56",
+            "futureAsset": false,
+            "propertyDetails": "56"
+          },
+          "stockInfo": null,
+          "legalDocumentInfo": {
+            "id": 302,
+            "docValue": "65",
+            "docType": "V003",
+            "docName": "GCN QSH nhà ở và QSD đất ở",
+            "issuedBy": "56",
+            "dateOfIssue": "2023-10-10T00:00:00",
+            "description": ""
+          },
+          "collateralAssetInfo": {
+            "id": 291,
+            "proposalCollateralValue": 56.00,
+            "valuationGuaranteed": 56.00,
+            "ltv": 56.0,
+            "description": null
+          },
+          "ownerInfo": [
+            {
+              "customerId": 16918,
+              "customerRefCode": "1325123548654",
+              "customerName": "Nguyễn Văn A",
+              "relationshipCode": "V012",
+              "relationshipName": "Thành viên góp vốn HKD/DNTN"
+            }
+          ]
+        }
+      },
+      {
+        "id": 437,
+        "assetCode": "098765",
+        "assetType": "V202",
+        "assetTypeName": "Séc",
+        "assetGroup": "V004",
+        "assetGroupName": "Giấy tờ có giá",
+        "assetName": "7h",
+        "ownerType": "V006",
+        "assetAdditionalInfo": {
+          "realEstateInfo": null,
+          "transportationInfo": null,
+          "stockInfo": {
+            "id": 145,
+            "stockType": null,
+            "quantity": 5,
+            "distributors": "V010",
+            "distributorsName": "MSB phát hành bằng VND",
+            "parValue": 600000000,
+            "description": "7h"
+          },
+          "legalDocumentInfo": {
+            "id": 304,
+            "docValue": "098lik",
+            "docType": "V002",
+            "docName": "QSH nhà ở và tài sản khác gắn liền với đất",
+            "issuedBy": "87umk",
+            "dateOfIssue": "2023-10-09T00:00:00",
+            "description": ""
+          },
+          "collateralAssetInfo": {
+            "id": 293,
+            "proposalCollateralValue": 2000000000.00,
+            "valuationGuaranteed": 8888.00,
+            "ltv": 50.0,
+            "description": null
+          },
+          "ownerInfo": [
+            {
+              "customerId": 16919,
+              "customerRefCode": "7654321",
+              "customerName": "th uyhn",
+              "relationshipCode": "D000",
+              "relationshipName": "Doanh nghiệp"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

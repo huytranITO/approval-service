@@ -1,0 +1,21 @@
+@startuml
+skin rose
+participant RM
+participant RB_APPROVAL_FE
+participant RB_APPROVAL_BE
+participant Minio
+
+RM -> RB_APPROVAL_FE: choose application
+RB_APPROVAL_FE -> RB_APPROVAL_FE: display detail application
+RM -> RB_APPROVAL_FE: choose file checklist
+RM -> RB_APPROVAL_FE: download file checklist
+alt valid
+    RB_APPROVAL_FE-> RB_APPROVAL_BE: call api call api "/api/v1/checklist/file/pre-signed-download/{bpmId}"
+    RB_APPROVAL_BE -> Minio: return (filePath && url && bucket)
+    Minio -> Minio: processing
+    Minio --> RB_APPROVAL_BE: return response
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return response
+else invalid
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return error code
+end
+@enduml

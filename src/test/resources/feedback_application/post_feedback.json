@@ -1,0 +1,34 @@
+{
+  "bpmId": "151-00007879",
+  "applicationCommentData": {
+    "customer": "Khách hàng",
+    "applicationCredit": "Khoản vay",
+    "applicationIncome": "Nguồn thu",
+    "assetInfo": "Tài sản",
+    "documentCommentData": {
+      "comment": "34567 ",
+      "documentFiles": [
+        {
+          "code": "code",
+          "name": "name",
+          "groupCode": "group",
+          "checkEnough": true,
+          "fileName": [
+            "CCCD1",
+            "CCCD2"
+          ]
+        },
+        {
+          "code": "code1",
+          "name": "name1",
+          "groupCode": "group1",
+          "checkEnough": false,
+          "fileName": [
+            "CCCD1",
+            "CCCD2"
+          ]
+        }
+      ]
+    }
+  }
+}

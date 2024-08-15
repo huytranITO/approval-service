@@ -1,0 +1,734 @@
+{
+  "data": {
+    "accountList": {
+      "listOfCAAccounts": [
+        {
+          "accountNumber": "80000001403",
+          "accountName": "TK TT",
+          "acctType": "D",
+          "productType": "RB.CA.NORMAL",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001405",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.NORMAL",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 1000000000,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001668",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.GIAINGAN",
+          "currency": "USD",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001669",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.GIAINGAN",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 125222222,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001678",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.NORMAL",
+          "currency": "USD",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001679",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.NORMAL",
+          "currency": "EUR",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001698",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.OD.MBUS.ACC",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 11996700000,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001726",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.GIAINGAN",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000001911",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.GIAINGAN",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000002398",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.GIAINGAN",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000002418",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.GIAINGAN",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "80000003154",
+          "accountName": "NAM HAI",
+          "acctType": "D",
+          "productType": "RB.CA.GIAINGAN",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        }
+      ],
+      "listOfFDAccounts": [
+        {
+          "accountNumber": "30000000311",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        }
+      ],
+      "listOfSAAccounts": [
+        {
+          "accountNumber": "30000000311",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        }
+      ],
+      "listOfLNAccounts": [
+        {
+          "accountNumber": "30000000311",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000316",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "ELNCVTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000317",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "ELNCVTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000318",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000319",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "ELNCVTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000320",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000322",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000323",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "ELNCVTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000324",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "ELNCVTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000325",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "ELNCVTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000326",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000336",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000344",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000348",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "ELNCVTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000349",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000350",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000351",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000352",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000353",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000354",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000356",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000357",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000361",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000362",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000364",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000365",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000373",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000381",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000384",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000385",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000395",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000409",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000410",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000411",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000415",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000435",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000441",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000443",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000444",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000447",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000448",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000449",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000450",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000451",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000452",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000453",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000454",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000455",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000456",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000457",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000458",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000459",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000000463",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000001517",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNBDS",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000001522",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000001566",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000001660",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNBDS",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        },
+        {
+          "accountNumber": "30000001664",
+          "accountName": "NAM HAI",
+          "acctType": "L",
+          "productType": "RLNTDTT",
+          "currency": "VND",
+          "relationShip": "OWNER",
+          "avaiableBalance": 0,
+          "status": "ACTIVE"
+        }
+      ]
+    }
+  }
+}

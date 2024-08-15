@@ -1,0 +1,26 @@
+{
+  "code": "000",
+  "data": {
+    "customerId": 123,
+    "relationships": [
+      {
+        "relatedCustomerId": 1,
+        "relatedIdentity": "1324sadfd",
+        "relatedIdentityType": "MAIN",
+        "relatedCustomerType": "FAMILY",
+        "relatedCustomerName": "John",
+        "active": true,
+        "bpmCif": "123df",
+        "cif": "cif123",
+        "version": 15,
+        "relationshipDetails": [
+          {
+            "id": 111,
+            "relationshipType": "FAMILY",
+            "relatedDetail": "R5"
+          }
+        ]
+      }
+    ]
+  }
+}

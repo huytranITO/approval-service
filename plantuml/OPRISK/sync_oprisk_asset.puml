@@ -1,0 +1,24 @@
+@startuml
+participant "User RM" as UserRM
+participant "FE DigiLending" as FE
+participant "Approval svc" as ApprovalService
+participant "Legacy svc" as LegacyService
+database "Approval" as ApprovalDB
+
+ref over UserRM, ApprovalService
+    Truy cập màn hình tab thông tin tài sản bảo đảm
+end
+UserRM -> FE: Click button đồng bộ thông tin oprisk tài sản
+FE -> ApprovalService: Call api (/approval-service/api/v1/application/sync-oprisk)
+ApprovalService -> LegacyService: Call api (/legacy/api/v1/op-risk/op-risk-integration)
+LegacyService --> ApprovalService: Trả về thông tin oprisk tài sản
+ApprovalService -> ApprovalDB: Tìm kiếm bản ghi thông tin oprisk tài sản
+ApprovalDB --> ApprovalService: Trả về thông tin bản ghi
+alt "Có tồn tại bản ghi"
+  ApprovalService -> ApprovalDB: Update bản ghi
+else "Không có bản ghi"
+  ApprovalService -> ApprovalDB: Thêm mới bản ghi
+end
+ApprovalService --> FE: Trả về thông tin tra cứu oprisk tài sản
+FE --> UserRM: Hiển thị thông tin tra cứu oprisk tài sản
+@enduml

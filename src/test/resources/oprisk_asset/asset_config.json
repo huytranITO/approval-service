@@ -1,0 +1,6 @@
+{
+  "authorizerOprAsset": "author",
+  "passwordOprAsset": "password",
+  "srvLegalOprAsset": "srv",
+  "regAppOprAsset": "regApp"
+}

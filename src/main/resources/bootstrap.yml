@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER:http://centralize-configuration.bpm.apps.ocp-nonprod.msb.com.vn/}
+      name: ${SERVICE_NAME:bpm-approval-rb-service}
+      username: bpm
+      password: Bpm@2021

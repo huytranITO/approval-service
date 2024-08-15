@@ -1,0 +1,23 @@
+@startuml
+skin rose
+participant RM
+participant RB_APPROVAL_FE
+participant RB_APPROVAL_BE
+participant CHECKLIST_SERVICE
+database CHECKLIST_DB
+
+RM -> RB_APPROVAL_FE: choose application
+RB_APPROVAL_FE -> RB_APPROVAL_FE: display detail application
+RM -> RB_APPROVAL_FE: choose checklist
+alt valid
+    RB_APPROVAL_FE -> RB_APPROVAL_BE: call api "/api/v1/checklist/file/pre-signed-upload/{bpmId}"
+    RB_APPROVAL_BE-> CHECKLIST_SERVICE: call API "/api/common/v1/file/upload-file"
+    CHECKLIST_SERVICE -> CHECKLIST_SERVICE: validate file
+    CHECKLIST_SERVICE-> CHECKLIST_DB: save data file
+    CHECKLIST_DB --> CHECKLIST_SERVICE: return data
+    CHECKLIST_SERVICE --> RB_APPROVAL_BE: return response
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return response
+else invalid
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return error code
+end
+@enduml

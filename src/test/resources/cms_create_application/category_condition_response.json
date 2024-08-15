@@ -1,0 +1,17 @@
+{
+  "code": "111",
+  "data": {
+    "category": [
+      {
+        "categoryDataCode": "R5",
+        "categoryCode": "RELATIONSHIP_DETAIL",
+        "conditionData": [
+          {
+            "conditionCategoryCode": "RELATIONSHIP_GROUP",
+            "conditionCategoryDataCode": "FAMILY1"
+          }
+        ]
+      }
+    ]
+  }
+}

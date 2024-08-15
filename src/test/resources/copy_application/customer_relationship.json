@@ -1,0 +1,32 @@
+[
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": 9358,
+    "customerRefId": 17676,
+    "relationship": "V012",
+    "relationshipValue": "Thành viên góp vốn HKD/DNTN"
+  },
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": 9359,
+    "customerRefId": 17677,
+    "relationship": null,
+    "relationshipValue": null
+  },
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": 9360,
+    "customerRefId": 17678,
+    "relationship": null,
+    "relationshipValue": null
+  }
+]

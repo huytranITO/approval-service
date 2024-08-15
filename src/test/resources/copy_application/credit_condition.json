@@ -1,0 +1,37 @@
+{
+  "transactionTime": "2023-10-17T10:51:32.667+00:00",
+  "responseCode": "200",
+  "responseMessage": "Success",
+  "value": [
+    {
+      "id": 150280,
+      "detail": "Khách hàng chuyển nguồn thu từ [hoạt động kinh doanh/cho thuê] (số tiền cần chuyển/tháng) về tài khoản khách hàng mở tại MSB.",
+      "controlLevel": "V003",
+      "bpmCusId": "00000421",
+      "state": "N",
+      "objectApply": "V001",
+      "timeControl": "V003",
+      "creditConditionGroup": "INC",
+      "conditionGroupCode": "R5",
+      "policyConditionId": 5,
+      "source": "PD",
+      "flag": null,
+      "timeControlDisburse": ""
+    },
+    {
+      "id": 150281,
+      "detail": "Khách hàng đóng hạn mức cũ trước khi mở hạn mức mới",
+      "controlLevel": "V008",
+      "bpmCusId": "00000421",
+      "state": "N",
+      "objectApply": "V001",
+      "timeControl": "V001",
+      "creditConditionGroup": "LMT",
+      "conditionGroupCode": "R8",
+      "policyConditionId": 8,
+      "source": "PD",
+      "flag": null,
+      "timeControlDisburse": ""
+    }
+  ]
+}

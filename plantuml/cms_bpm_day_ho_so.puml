@@ -1,0 +1,107 @@
+@startuml
+'Config
+skinparam shadowing false
+skinparam responseMessageBelowArrow false
+
+skinparam DefaultFontColor #222
+skinparam TitleFontSize 25
+
+skinparam NoteBorderColor #CB1D23
+skinparam NoteBackgroundColor #gold
+skinparam NoteFontColor #222
+
+skinparam DatabaseBorderColor #CB1D23
+skinparam DatabaseBackgroundColor #bisque
+
+skinparam sequence {
+  ParticipantBorderThickness 1
+  ParticipantBorderColor #CB1D23
+  ParticipantBackgroundColor #business
+  ParticipantFontColor #222
+  ParticipantFontSize 14
+  ParticipantFontStyle bold
+
+  LifeLineBorderColor #CB1D23
+  LifeLineBackgroundColor #business
+
+  ArrowColor #CB1D23
+  ActorBorderColor #CB1D23
+
+  GroupBorderThickness 1
+  GroupBorderColor #CB1D23
+  GroupHeaderFontColor #white
+  GroupBackgroundColor #CB1D23
+  GroupFontColor #CB1D23
+}
+
+
+title
+  **Chuyển hồ sơ sang BPM**
+end title
+
+||20||
+autonumber 1 1 "<b>(0)"
+
+participant cms as "CMS"
+participant ext_gw_dmz as "External API GW"
+participant bpm_gw_api as "BPM API GW"
+participant ebApproval as "RB Approval"
+participant msRequest as "Camunda"
+participant msDoc as "MS DOC"
+participant msChecklist as "Checklist"
+participant s3 as "AWS S3"
+participant kafka as "Kafka"
+database ebDB as "DB BO Approval"
+
+cms -> ext_gw_dmz: call api to get bpm token
+ext_gw_dmz -> bpm_gw_api : forward request get jwt token
+bpm_gw_api --> ext_gw_dmz: <<bpm internal jwt token>>
+ext_gw_dmz --> cms: <<bpm internal jwt token>>
+cms -> cms: <<save>>
+cms -> ext_gw_dmz: call api with x-api-key\n Đẩy hồ sơ sang BPM (ldp_application_Id + list files path S3)
+ext_gw_dmz -> bpm_gw_api : forward request
+bpm_gw_api -> ebApproval: verify token
+alt "valid"
+    bpm_gw_api -> ebApproval: send request
+    ebApproval -> ebDB: save to (ldp_application_Id + list files path S3) \n với trạng thái chưa download (0)
+
+    ebApproval -> msRequest: initialize process
+    msRequest --> ebApproval: <<process instance id>> (bpm_application_id)
+    alt "Tạo Success bpm_application_id"
+    ebApproval -> ebDB: update DB mapping giữa bpm_application_id và ldp_application_Id
+    group Async: Request download files
+        ebApproval -> msDoc : request to download list files from S3 (ldp_application_Id + list files path S3)
+        group Loop: list files
+            msDoc -> kafka: publish message thong tin file cần download
+        end
+        group Loop: list files
+            msDoc -> kafka: comsume message file cần download
+            msDoc -> s3: download
+            s3 --> msDoc: <<file data>>
+            msDoc -> msDoc : luu server và tạo doc_id
+            msDoc -> kafka: publish "Download File" message \nwith (doc_id,ldp_application_Id, trạng thái download)
+        end
+    end
+    group Consume Kafka
+    ebApproval --> kafka : consume "Download File" message
+    ebApproval -> ebDB : lưu vào ebApproval database - Documents Table\n (doc_id, ldp_application_Id, trạng thái download)
+    ebApproval -> ebApproval: kiểm tra số lượng file download đủ chưa?
+        alt "Đủ files"
+        ebApproval -> msChecklist: tạo check list voi list doc_ids
+        msChecklist -> msChecklist : thực hiện tạo check list và lưu DB Check list
+        msChecklist --> ebApproval : <<success>>
+        end
+    end
+    ebApproval --> bpm_gw_api: <<success>>
+    bpm_gw_api --> ext_gw_dmz : <<success>>
+    ext_gw_dmz --> cms: <<success>>
+    else "Lỗi khi tạo bpm_application_id"
+        ebApproval --> bpm_gw_api: <<error>>
+        bpm_gw_api --> ext_gw_dmz : <<error>>
+        ext_gw_dmz --> cms: <<error>>
+    end
+else "invalid"
+bpm_gw_api --> ext_gw_dmz : <<error>>
+ext_gw_dmz --> cms: <<error>>
+end
+@enduml

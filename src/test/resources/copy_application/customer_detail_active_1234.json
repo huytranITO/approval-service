@@ -1,0 +1,114 @@
+{
+  "customer": {
+    "id": 1234,
+    "bpmCif": "00002346",
+    "name": "Lại Anh Trí",
+    "birthday": "14/09/1990",
+    "gender": "M",
+    "national": "VN",
+    "nationalName": null,
+    "maritalStatus": "1",
+    "phoneNumber": "0962534420",
+    "email": "trilv@gmail.com",
+    "customerSegment": "V002",
+    "staffId": null,
+    "version": 9,
+    "active": true
+  },
+  "coreCustomer": {
+    "cifNumber": "1002189",
+    "customerName": "0000000000001002189",
+    "idNo": "B6231570",
+    "idType": "PP",
+    "dateOfBirthOrIncorp": "19/12/1993",
+    "issuedDate": "15/02/2012",
+    "placeOfBirthOrRegistration": "HA NOI",
+    "issuedPlace": "CUC QUAN LY XUAT NHAP CANH",
+    "email": null,
+    "constOrBusinessType": "KINH TE CA THE",
+    "sfTemp": "",
+    "addressLine": " 0000000000001002189 0000000000001002189 0000000000001002189 0000000000001002189 0000000000001002189",
+    "gender": "F",
+    "nationality": "VN",
+    "maritalStatus": "1",
+    "mobilePhone": null,
+    "vipCode": null,
+    "sfCode": ""
+  },
+  "identityDocuments": [
+    {
+      "id": 8231,
+      "type": "IDC",
+      "identityNumber": "909090",
+      "issuedBy": "V001",
+      "issuedPlace": null,
+      "issuedPlaceName": null,
+      "issuedDate": "06/12/2023",
+      "cif": null,
+      "primary": false
+    },
+    {
+      "id": 8232,
+      "type": "CMND",
+      "identityNumber": "919191",
+      "issuedBy": "V002",
+      "issuedPlace": "40",
+      "issuedPlaceName": null,
+      "issuedDate": "06/12/2023",
+      "cif": null,
+      "primary": false
+    },
+    {
+      "id": 8233,
+      "type": "PP",
+      "identityNumber": "929292",
+      "issuedBy": "V004",
+      "issuedPlace": null,
+      "issuedPlaceName": null,
+      "issuedDate": "07/12/2023",
+      "cif": null,
+      "primary": false
+    },
+    {
+      "id": 8659,
+      "type": "IA",
+      "identityNumber": "55555",
+      "issuedBy": "V005",
+      "issuedPlace": null,
+      "issuedPlaceName": null,
+      "issuedDate": "14/11/2023",
+      "cif": null,
+      "primary": false
+    },
+    {
+      "id": 7998,
+      "type": "IA",
+      "identityNumber": "55555",
+      "issuedBy": "V005",
+      "issuedPlace": null,
+      "issuedPlaceName": null,
+      "issuedDate": "14/11/2023",
+      "cif": null,
+      "primary": true
+    }
+  ],
+  "addresses": [
+    {
+      "id": 15594,
+      "addressType": "V001",
+      "countryCode": null,
+      "cityCode": "4",
+      "cityName": "Tỉnh Trà Vinh",
+      "districtCode": "157",
+      "districtName": "Huyện Tiểu Cần",
+      "wardCode": "1923",
+      "wardName": "Xã Ngãi Hùng",
+      "addressLine": "null",
+      "fullAddress": "null, Xã Ngãi Hùng, Huyện Tiểu Cần, Tỉnh Trà Vinh",
+      "hktt": false
+    }
+  ],
+  "relatedCustomerIds": [
+    2176
+  ]
+}

@@ -1,0 +1,38 @@
+@startuml
+skin rose
+participant RM
+participant RB_APPROVAL_FE
+participant RB_APPROVAL_BE
+participant CHECKLIST_SERVICE
+participant CUSTOMER_PROFILE
+database APPROVAL_DB
+database CHECKLIST_DB
+database CUSTOMER_PROFILE_DB
+
+RM -> RB_APPROVAL_FE: creating request
+RB_APPROVAL_FE -> RB_APPROVAL_FE: form search customer
+RM -> RB_APPROVAL_FE : input customer
+RB_APPROVAL_FE -> CUSTOMER_PROFILE: call api call api "/api/v1/customers/rb"
+CUSTOMER_PROFILE -> CUSTOMER_PROFILE_DB: query customer info
+CUSTOMER_PROFILE_DB --> CUSTOMER_PROFILE : return response
+CUSTOMER_PROFILE --> RB_APPROVAL_FE: return response
+RM -> RB_APPROVAL_FE: creating application
+alt valid
+    RB_APPROVAL_FE -> RB_APPROVAL_BE: call api "/api/v1/checklist/reload/{bpmId}"
+    RB_APPROVAL_BE -> CHECKLIST_SERVICE: call API "/api/common/v1/checklist/reload"
+    alt checklist does not exist
+            CHECKLIST_SERVICE -> CHECKLIST_SERVICE: generate checklist
+            CHECKLIST_SERVICE -> CHECKLIST_DB: save data checklist
+            CHECKLIST_DB --> CHECKLIST_SERVICE: return data
+            CHECKLIST_SERVICE --> RB_APPROVAL_BE: return response
+            RB_APPROVAL_BE --> RM: return response
+        else
+            CHECKLIST_SERVICE -> CHECKLIST_DB: get data checklist
+            CHECKLIST_DB --> CHECKLIST_SERVICE: return response
+            CHECKLIST_SERVICE --> RB_APPROVAL_BE: return response
+            RB_APPROVAL_BE --> RM: return response
+        end
+else invalid
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return error code
+end
+@enduml

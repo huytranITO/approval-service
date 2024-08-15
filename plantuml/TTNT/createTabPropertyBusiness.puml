@@ -1,0 +1,28 @@
+@startuml
+skin rose
+participant RM
+participant RB_APPROVAL_FE
+participant RB_APPROVAL_BE
+participant CUSTOMER_PROFILE
+database APPROVAL_DB
+database CUSTOMER_PROFILE_DB
+
+RM -> RB_APPROVAL_FE: creating request
+RB_APPROVAL_FE -> RB_APPROVAL_FE: display form search customer
+RM -> RB_APPROVAL_FE : input customer info
+RB_APPROVAL_FE -> CUSTOMER_PROFILE: call api "/api/v1/customers/rb"
+CUSTOMER_PROFILE -> CUSTOMER_PROFILE_DB: query customer info
+CUSTOMER_PROFILE_DB --> CUSTOMER_PROFILE : return response
+CUSTOMER_PROFILE --> RB_APPROVAL_FE: return response
+RM -> RB_APPROVAL_FE: creating application
+RM -> RB_APPROVAL_FE: input property business income
+alt valid
+    RB_APPROVAL_FE -> RB_APPROVAL_BE: call api save "/api/v1/application/{bpmId}/save-subtask"
+    RB_APPROVAL_BE -> RB_APPROVAL_BE: validate input
+    RB_APPROVAL_BE -> APPROVAL_DB: save property business data
+    APPROVAL_DB --> RB_APPROVAL_BE: return response
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return response
+else invalid
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return error code
+end
+@enduml

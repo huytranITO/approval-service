@@ -1,0 +1,761 @@
+{
+  "initializeInfo": {
+    "application": {
+      "bpmId": null,                                    // ID Hồ sơ
+      "source": null,                                   // Nguồn khởi tạo hồ sơ
+      "segment": null,                                  // Phân khúc KH
+      "createdBy": null,                                // Người khởi tạo
+      "createdFullName": null,                          // Họ tên người khởi tạo
+      "createdPhoneNumber": null,                       // Số điện thoại người khởi tạo
+      "proposalApprovalFullName": null,                 // Họ tên người kiểm soát/phê duyệt đề xuất
+      "proposalApprovalPhoneNumber": null,              // Số điện thoại người kiểm soát/phê duyệt đề xuất
+      "loanApprovalUser": null,                         // Username người kiểm soát/phê duyệt khoản vay
+      "approvalType": null,                             // Luồng phê duyệt
+      "processFlow": null,                              // Luồng trình
+      "processFlowValue": null,
+      "submissionPurpose": null,                        // Mục đích trình
+      "submissionPurposeValue": null,
+      "businessUnit": null,                             // Đơn vị kinh doanh
+      "partnerCode": null,                              // Mã đối tác
+      "createdAt": null,                                // Ngày khởi tạo
+      "riskLevel": null,
+      "status": null,                                   // Trạng thái
+      "area": null,                                     // Vùng
+      "region": null,                                   // Miền
+      "suggestedAmount": null,                          // Số tiền đề xuất
+      "distributionForm": null,                         // Hình thức cấp
+      "regulatoryCode": null,                           // Mã quy định
+      "processingRole": null                            // Role đang xử lý
+    },
+    "customerAndRelationPerson": {
+      "customer": {
+        "id": null,                                     // ID customer
+        "bpmCif": null,                                 // Số CIF tại BPM
+        "cif": null,                                    // Số CIF tại core
+        "customerType": null,                           // Loại khách hàng (RB | EB)
+        "name": null,                                   // Họ tên khách hàng
+        "gender": null,                                 // Giới tính
+        "genderValue": null,
+        "birthday": null,                               // Ngày sinh
+        "maritalStatus": null,                          // Tìn trạng hôn nhân
+        "maritalStatusValue": null,
+        "age": null,                                    // Tuổi
+        "national": null,                                 // QUốc tịch
+        "nationalValue": null,
+        "customerSegment": null,                        // Đối tượng khách hàng
+        "msbMember": false,                             // Là nhân viên MSB
+        "staffId": null,                                // Mã nhân viên
+        "email": null,                                  // Email
+        "phoneNumber": null,                            // Số điện thoại
+        "identityDocuments": [
+          {
+            "id": null,                                 // ID identity
+            "priority": true,                           // Thông tin định danh ưu tiên
+            "type": null,                               // Loại thông tin định danh
+            "documentTypeValue": null,
+            "identityNumber": null,                     // Mã định danh
+            "issuedDate": null,                         // Ngày cấp
+            "issuedBy": null,                           // Cấp bởi
+            "issuedByValue": null,
+            "issuedPlace": null,                        // Nơi cấp
+            "issuedPlaceValue": null
+          }
+        ],
+        "addresses": [
+          {
+            "id": null,                                 // ID address
+            "addressType": null,                        // Loại địa chỉ
+            "addressTypeValue": null,
+            "cityCode": null,                           // Tỉnh thành phố
+            "cityValue": null,
+            "districtCode": null,                       // Quận huyện
+            "districtValue": null,
+            "wardCode": null,                           // Phường xã
+            "wardValue": null,
+            "addressLine": null,                        // Số nhà, tên đường
+            "canDelete": true                           // Được phép xóa hay không?
+          }
+        ]
+      },
+      "customerRelations": [
+        {
+          "id": null,                                   // ID customer
+          "bpmCif": null,                               // Số CIF tại BPM
+          "cif": null,                                  // Số CIF tại core
+          "customerType": null,                         // Loại khách hàng (RB | EB)
+          "name": null,                                 // Họ tên khách hàng
+          "gender": null,                               // Giới tính
+          "genderValue": null,
+          "birthday": null,
+          "martialStatus": null,
+          "martialStatusValue": null,
+          "age": null,
+          "nation": null,
+          "nationValue": null,
+          "customerSegment": null,
+          "msbMember": null,
+          "staffId": null,
+          "relationship": null,                         // Mối quan hệ
+          "relationshipValue": null,
+          "email": null,
+          "phoneNumber": null,
+          "identityDocuments": [
+            {
+              "id": null,
+              "priority": null,
+              "type": null,
+              "documentTypeValue": null,
+              "identityNumber": null,
+              "issuedDate": null,
+              "issuedBy": null,
+              "issuedByValue": null,
+              "issuedPlace": null,
+              "issuedPlaceValue": null
+            }
+          ],
+          "addresses": [
+            {
+              "id": null,
+              "addressType": null,
+              "addressTypeValue": null,
+              "cityCode": null,
+              "cityValue": null,
+              "districtCode": null,
+              "districtValue": null,
+              "wardCode": null,
+              "wardValue": null,
+              "addressLine": null
+            }
+          ]
+        }
+      ],
+      "enterpriseRelations": [
+        {
+          "id": null,
+          "businessType": null,                         // Loại hình kinh doanh
+          "businessTypeValue": null,
+          "businessRegistrationNumber": null,           // Mã ĐKKD
+          "companyName": null,                          // Tên công ty
+          "firstRegistrationAt": null,
+          "deputy": null
+        }
+      ],
+      "cic": {
+        "explanation": null,                            // Diễn giải
+        "cicDetails": [
+          {
+            "id": null,                                 // ID tra cứu CIC
+            "subject": null,                            // Đối tượng
+            "subjectValue": null,
+            "identifierCode": null,                     // Mã định danh/ĐKKD
+            "deftGroupCurrent": null,                   // Nhóm nợ thời điểm hiện tại
+            "deftGroupLast12": null,                    // Nhóm nợ 12 tháng gần nhất
+            "deftGroupLast24": null,                    // Nhóm nợ 24 tháng gần nhất
+            "totalLoanCollateral": null,                // TỔng dư nợ có TSBĐ
+            "totalUnsecureLoan": null,                  // Tổng dư nợ ko TSBĐ
+            "totalCreditCardLimit": null,               // Tổng hạn mức TTD
+            "totalDebt": null,                          // Tổng dư nợ TTD
+            "statusCode": null,
+            "statusDescription": null,                  // Trạng thái tra cứu
+            "queryAt": null                             // Thời điểm tra cứu
+          }
+        ]
+      },
+      "amlOpr": {
+        "amls": [
+          {
+            "id": null,                                 // ID tra cứu AML
+            "subject": null,                            // Đối tượng
+            "subjectValue": null,
+            "identifierCode": null,                     // Mã định danh/ĐKKD
+            "queryType": null,
+            "resultCode": null,
+            "resultDescription": null,                  // Kết quả tra cứu
+            "resultOnBlackList": null                   // Lý do thuộc danh sách
+          }
+        ],
+        "oprs": [
+          {
+            "id": null,                                 // ID tra cứu OPRISK
+            "subject": null,                            // ĐỐi tượng
+            "subjectValue": null,
+            "identifierCode": null,                     // Mã định danh/ĐKKD
+            "queryType": null,
+            "resultCode": null,
+            "resultDescription": null,                  // Kết quả tra cứu
+            "resultOnBlackList": null,                  // Lý do thuộc danh sách
+            "startDate": null,                          // Thời gian bắt đầu
+            "endDate": null                             // Thời gian kết thúc
+          }
+        ],
+        "generals": [
+          {
+            "subject": null,                            // Đối tượng
+            "subjectValue": null,
+            "identifierCode": null,                     // Mã định danh/ĐKKD
+            "amlResult": null,                          // Kết quả tra cứu AML
+            "oprResult": null                           // Kết quả tra cứu OPRISK
+          }
+        ]
+      }
+    },
+    "incomes": [
+      {
+        "id": null,                                     // ID nguồn thu
+        "incomeRecognitionMethod": "ACTUALLY",          // Phương thức ghi nhận thu nhập
+        "incomeRecognitionMethodValue": null,
+        "incomeItems": [
+          {
+            "id": null,                                 // ID salary
+            "recognizedIncome": null,                   // Thu nhập ghi nhận (tháng)
+            "incomeType": "V001",                       // Loại nguồn thu
+            "incomeTypeValue": "Từ lương",
+            "customerId": null,                         // ID customer (của chủ nguồn thu)
+            "incomeOwner": null,                        // Chủ nguồn thu
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,                    // Tên chủ nguồn thu
+            "taxCode": null,                            // Mã số thuế
+            "socialInsuranceCode": null,                // BHXH
+            "rankType": null,                           // Cấp bậc
+            "rankTypeValue": null,
+            "kpiRating": null,                          //Xếp loại KPI
+            "kpiRatingValue": null,
+            "payType": null,                            // HÌnh thức trả lương
+            "payTypeValue": null,
+            "laborType": null,                          // Loại hình HĐLĐ
+            "laborTypeValue": null,
+            "businessRegistrationNumber": null,         // Mã số ĐKKD ĐVCT
+            "groupOfWorking": null,                     // Phân nhóm ĐVCT
+            "companyName": null,                        // Cơ quan công tác
+            "position": null,                           // Chức vụ
+            "startWorkingDay": null,                    // Ngày vào làm việc
+            "explanation": null,                        // Diễn giải
+            "address": {
+              "cityCode": null,
+              "cityValue": null,
+              "districtCode": null,
+              "districtValue": null,
+              "wardCode": null,
+              "wardValue": null,
+              "addressLine": null
+            }
+          }
+        ]
+      },
+      {
+        "id": null,                                 // ID nguồn thu
+        "incomeRecognitionMethod": "ACTUALLY",
+        "incomeRecognitionMethodValue": null,
+        "incomeItems": [
+          {
+            "id": null,                             // ID rental
+            "recognizedIncome": null,
+            "incomeType": "V002",
+            "customerId": null,                     // ID customer (của chủ nguồn thu)
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "Cho thuê tài sản",
+            "assetType": null,                      // Loại tài sản
+            "assetTypeValue": null,
+            "assetOwner": null,                     // Chủ sở hữu tài sản
+            "assetAddress": null,                   // Địa chỉ tài sản/ Loại xe
+            "renter": null,                         // Bên thuê
+            "renterPhone": null,                    // SĐT bên thuê
+            "rentalPurpose": null,                  // Mục đích thuê
+            "rentalPurposeValue": null,
+            "rentalPrice": null,                    // Giá thuê
+            "explanation": null                     // Diễn giải
+          }
+        ]
+      },
+      {
+        "id": null,
+        "incomeRecognitionMethod": "ACTUALLY",
+        "incomeRecognitionMethodValue": null,
+        "incomeItems": [
+          {
+            "id": null,                             // ID individual income
+            "recognizedIncome": null,
+            "incomeType": "V003",
+            "customerId": null,                     // ID customer (của chủ nguồn thu)
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "CNKD/HGD/HKD",
+            "businessRegistrationNumber": null,     // Mã số ĐKKD
+            "companyName": null,                    // Tên cơ sở kinh doanh
+            "mainBusinessSector": null,             // Ngành nghê kinh doanh chính
+            "productionProcess": null,              // Quy trình sản xuất kinh doanh
+            "recordMethod": null,                   // Phương thức ghi chép
+            "input": null,                          // Nguồn đầu vào
+            "output": null,                         // Nguồn ra
+            "businessScale": null,                  // Quy mô kinh doanh
+            "inventory": null,                      // Hàng tồn kho, phải thu, phải trả
+            "evaluationPeriod": null,               // Kỳ đánh giá kết quả
+            "evaluationPeriodValue": null,
+            "incomeMonthly": null,                  // Doanh thu/tháng
+            "expenseMonthly": null,                 // Chi phí/tháng
+            "profitMonthly": null,                  // Lợi nhuận/tháng
+            "profitMargin": null,                   // Biên lợi nhuận
+            "evaluateResult": null,                 // Đánh giá kết quả kinh doanh
+            "address": {
+              "addressLine": null,
+              "addressType": null,
+              "cityCode": null,
+              "districtCode": null,
+              "wardCode": null,
+              "cityValue": null,
+              "districtValue": null,
+              "wardValue": null
+            }
+          }
+        ]
+      },
+      {
+        "id": null,
+        "incomeRecognitionMethod": "ACTUALLY",
+        "incomeRecognitionMethodValue": null,
+        "incomeItems": [
+          {
+            "id": null,
+            "recognizedIncome": null,
+            "incomeType": "V004",
+            "customerId": null,
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "Doanh nghiệp",
+            "businessRegistrationNumber": null,
+            "companyName": null,
+            "mainBusinessSector": null,
+            "capitalContributionRate": null,        // Tỷ lệ góp vốn của khách hàng
+            "businessPlaceOwnership": null,
+            "businessPlaceOwnershipValue": null,
+            "productionProcess": null,
+            "recordMethod": null,
+            "input": null,
+            "output": null,
+            "businessScale": null,
+            "inventory": null,
+            "evaluationPeriod": null,
+            "evaluationPeriodValue": null,
+            "incomeMonthly": null,
+            "expenseMonthly": null,
+            "profitMonthly": null,
+            "profitMargin": null,
+            "evaluateResult": null,
+            "address": {
+              "addressLine": null,
+              "addressType": null,
+              "cityCode": null,
+              "districtCode": null,
+              "wardCode": null,
+              "cityValue": null,
+              "districtValue": null,
+              "wardValue": null
+            }
+          }
+        ]
+      },
+      {
+        "id": null,
+        "incomeRecognitionMethod": "ACTUALLY",
+        "incomeRecognitionMethodValue": null,
+        "incomeItems": [
+          {
+            "id": null,
+            "recognizedIncome": null,
+            "incomeType": "V005",
+            "customerId": null,
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "Nguồn thu khác",
+            "incomeFuture": false,                      // Nguồn thu hình thành trong tương lai
+            "incomeInfo": null,                         // Thông tin nguồn thu
+            "incomeDetail": null,                       // Chi tiết nguồn thu
+            "incomeDetailValue": null,
+            "explanation": null                         // Diễn giải
+          }
+        ]
+      },
+      {
+        "id": null,
+        "incomeRecognitionMethod": "EXCHANGE",
+        "incomeRecognitionMethodValue": null,
+        "recognizedIncome": null,                       // Thu nhập (tháng)
+        "conversionMethod": null,                       // Phương pháp quy đổi
+        "conversionMethodValue": null,
+        "explanation": null,                            // Diễn giải
+        "incomeItems": [
+          {
+            "id": null,
+            "incomeType": "V001",
+            "customerId": null,
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "Từ lương",
+            "taxCode": null,
+            "socialInsuranceCode": null,
+            "rankType": null,
+            "rankTypeValue": null,
+            "kpiRating": null,
+            "kpiRatingValue": null,
+            "payType": null,
+            "payTypeValue": null,
+            "laborType": null,
+            "laborTypeValue": null,
+            "businessRegistrationNumber": null,
+            "groupOfWorking": null,
+            "companyName": null,
+            "position": null,
+            "startWorkingDay": null,
+            "explanation": null,
+            "address": {
+              "addressLine": null,
+              "addressType": null,
+              "cityCode": null,
+              "districtCode": null,
+              "wardCode": null,
+              "cityValue": null,
+              "districtValue": null,
+              "wardValue": null
+            }
+          },
+          {
+            "id": null,
+            "incomeType": "V002",
+            "customerId": null,
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "Cho thuê tài sản",
+            "assetType": null,
+            "assetTypeValue": null,
+            "assetOwner": null,
+            "assetAddress": null,
+            "renter": null,
+            "renterPhone": null,
+            "rentalPurpose": null,
+            "rentalPurposeValue": null,
+            "rentalPrice": null,
+            "explanation": null
+          },
+          {
+            "id": null,
+            "incomeType": "V003",
+            "customerId": null,
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "CNKD/HGD/HKD",
+            "businessRegistrationNumber": null,
+            "companyName": null,
+            "mainBusinessSector": null,
+            "productionProcess": null,
+            "recordMethod": null,
+            "input": null,
+            "output": null,
+            "businessScale": null,
+            "inventory": null,
+            "evaluationPeriod": null,
+            "evaluationPeriodValue": null,
+            "incomeMonthly": null,
+            "expenseMonthly": null,
+            "profitMonthly": null,
+            "profitMargin": null,
+            "evaluateResult": null,
+            "address": {
+              "addressLine": null,
+              "addressType": null,
+              "cityCode": null,
+              "districtCode": null,
+              "wardCode": null,
+              "cityValue": null,
+              "districtValue": null,
+              "wardValue": null
+            }
+          },
+          {
+            "id": null,
+            "incomeType": "V004",
+            "customerId": null,
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "Doanh nghiệp",
+            "businessRegistrationNumber": null,
+            "companyName": null,
+            "mainBusinessSector": null,
+            "capitalContributionRate": null,
+            "businessPlaceOwnership": null,
+            "businessPlaceOwnershipValue": null,
+            "productionProcess": null,
+            "recordMethod": null,
+            "input": null,
+            "output": null,
+            "businessScale": null,
+            "inventory": null,
+            "evaluationPeriod": null,
+            "evaluationPeriodValue": null,
+            "incomeMonthly": null,
+            "expenseMonthly": null,
+            "profitMonthly": null,
+            "profitMargin": null,
+            "evaluateResult": null,
+            "address": {
+              "addressLine": null,
+              "addressType": null,
+              "cityCode": null,
+              "districtCode": null,
+              "wardCode": null,
+              "cityValue": null,
+              "districtValue": null,
+              "wardValue": null
+            }
+          },
+          {
+            "id": null,
+            "incomeType": "V005",
+            "customerId": null,
+            "incomeOwner": null,
+            "incomeOwnerValue": null,
+            "incomeOwnerName": null,
+            "incomeTypeValue": "Nguồn thu khác",
+            "incomeFuture": false,
+            "incomeInfo": null,
+            "incomeDetail": null,
+            "incomeDetailValue": null,
+            "explanation": null
+          }
+        ]
+      }
+    ]
+  },
+  "fieldInfor": {
+    "fieldInformations": [
+      {
+        "id": null,                                       // id thông tin thực địa của ĐVKĐ
+        "placeType": null,                                // Loại địa điểm
+        "placeTypeValue": null,
+        "relationship": null,                             // Mối quan hệ
+        "relationshipValue": null,
+        "timeAt": null,                                   // Thời gan
+        "instructor": null,                               // Người hướng dẫn
+        "executor": null,                                 // Người thực hiện XMTD
+        "result": null,                                   // Kết quả
+        "resultValue": null,
+        "address": {
+          "cityCode": null,
+          "cityValue": null,
+          "districtCode": null,
+          "districtValue": null,
+          "wardCode": null,
+          "wardValue": null,
+          "addressLine": null
+        }
+      }
+    ]
+  },
+  "debtInfo": {
+    "limitCredits": [
+      {
+        "id": null,                                           // id hạn mức tín dụng
+        "loanLimit": null,                                    // Số tiền vay/Hạn mức
+        "loanLimitValue": null,
+        "loanProductCollateral": null,                        // Khoản cấp tín dụng có TSBĐ - SP vay mua sản phẩm tại dự án hợp tác chiến lược
+        "otherLoanProductCollateral": null,                   // Khoản cấp tín dụng có TSBĐ - SP khác SP vay mua sản phẩm tại dự án hợp tác chiến lược
+        "unsecureProduct": null,                              // Khoản cấp tín dụng không TSBĐ - SP vay mua sản phẩm tại dự án hợp tác chiến lược
+        "otherUnsecureProduct": null,                         // Khoản cấp tín dụng không TSBĐ - SP khác SP vay mua sản phẩm tại dự án hợp tác chiến lược
+        "total": null                                         // Tổng cộng
+      }
+    ],
+    "credits": [
+      {
+        "id": null,                                           // id khoản cấp tín dụng đề xuất
+        "appCreditLoanId": null,
+        "creditType": "V002",                                 // Khoản cấp tín dụng
+        "creditTypeValue": "Cho vay không TSBĐ",
+        "documentCode": null,                                 // Mã văn bản
+        "approveResult": null,                                // Ý kiến phê duyệt
+        "approveResultValue": null,
+        "loanAmount": null,                                   // Số tiền vay/Hạn mức cấp/hạn mức thẻ
+        "productCode": null,                                  // Mã sản phẩm
+        "productName": null,                                  // Tên sản phẩm
+        "payback": null,                                      // Hoàn vốn
+        "loanPurpose": null,                                  // Mục đích vay
+        "loanPurposeValue": null,
+        "loanPurposeExplanation": null,                       // Diễn giải mục đích vay
+        "loanPeriod": null,                                   // Thời gian vay
+        "kunnPeriod": null,
+        "originalPeriod": null,                               // Thời gian ân hạn gốc
+        "totalCapital": null,                                 // Tổng nhu cầu vốn
+        "equityCapital": null,                                // Vốn tự có
+        "ltd": null,
+        "creditForm": null,                                   // Hình thức cấp tín dụng
+        "creditFormValue": null,
+        "disburseFrequency": null,                            // Tần suất giải ngân
+        "disburseFrequencyValue": null,
+        "debtPayMethod": null,                                // PHương thức trả nợ
+        "debtPayMethodValue": null,
+        "disburseMethod": null,                               // Phương thức giải ngân
+        "disburseMethodValue": null,
+        "disburseMethodExplanation": null,                    // Diễn giải phương thức giải ngân
+        "principalPayPeriod": null,                           // Kỳ trả nợ gốc
+        "principalPayUnit": null,                             // Đơn vị kỳ trả nợ gốc
+        "principalPayUnitValue": null,
+        "interestPayPeriod": null,                            // Kỳ trả lãi
+        "interestPayUnit": null,                              // Đơn vị kỳ trả lãi
+        "interestPayUnitValue": null
+      },
+      {
+        "id": null,
+        "creditType": "V004",
+        "creditTypeValue": "Thấu chi không TSBĐ",
+        "documentCode": null,
+        "approveResult": null,
+        "approveResultValue": null,
+        "loanAmount": null,
+        "appCreditOverdraftId": null,
+        "interestRateCode": null,                             // Mã lãi suất
+        "productName": null,                                  // Tên sản phẩm
+        "loanPurpose": null,                                  // Mục đích vay
+        "loanPurposeValue": null,
+        "limitSustentivePeriod": null,                        // Thời gian duy trì hạn mức
+        "debtPayMethod": null,                                // Phương thức trả nợ
+        "debtPayMethodValue": null,
+        "infoAdditional": null                                // Thông tin bổ sung
+      },
+      {
+        "id": null,
+        "creditType": "V005",
+        "creditTypeValue": "Thẻ tín dụng không TSBĐ",
+        "documentCode": null,
+        "approveResult": null,
+        "approveResultValue": null,
+        "loanAmount": null,
+        "appCreditCardId": null,
+        "cardPolicyCode": null,                               // Mã chính sách thẻ
+        "productName": null,                                  // Tên sản phẩm
+        "cardType": null,                                     // Loại thẻ
+        "cardTypeValue": null,
+        "way4CardCode": null,                                 // Mã way4
+        "cardName": null,                                     // Tên in trên thẻ
+        "secretQuestion": null,                               // Câu hỏi bí mật
+        "limitSustentivePeriod": null,                        // Thời gian duy trì hạn mức
+        "email": null,
+        "autoDeductRate": null,                               // Tỷ lệ trích nợ tự động
+        "autoDeductRateValue": null,
+        "deductAccountNumber": null,                          // STK trích nợ
+        "cardForm": null,                                     // HÌnh thức thẻ
+        "cardFormValue": null,
+        "cardReceiveAddress": null,                           // Địa chỉ nhận thẻ
+        "cardReceiveAddressValue": null,
+        "hasSubCard": false,                                  // Có thẻ phụ
+        "subCreditCards": [
+          {
+            "id": null,
+            "cardOwnerName": null,                            // Tên chủ thẻ
+            "email": null,
+            "phoneNumber": null,
+            "cardLimitAmount": null                           // Hạn mức thẻ phụ
+          }
+        ]
+      }
+    ],
+    "creditRatings": [
+      {
+        "id": null,
+        "ratingId": null,                                   // ID xếp hạng
+        "ratingResult": null,                               // Kết quả xếp hạng
+        "creditRatingsDtls": [
+          {
+            "id": null,
+            "identityCard": null,                           // CMND
+            "score": null,                                  // Điểm
+            "rank": null,                                   // Hạng
+            "executor": null,                               // Cán bộ xử lý
+            "role": null,                                   // Cấp xử lý
+            "status": null                                  // Trạng thái
+          }
+        ]
+      }
+    ],
+    "repayment": {
+      "totalIncome": null,                                    // Tổng thu nhập
+      "totalRepay": null,                                     // Tổng nghĩa vụ trả nợ
+      "dti": null,
+      "dsr": null,
+      "mue": null,
+      "evaluate": null                                        // Đánh giá
+    },
+    "specialRiskContents": [
+      {
+        "id": null,
+        "contentType": null,
+        "criteriaGroup": null,                                // Nhóm tiêu chí
+        "criteriaGroupValue": null,
+        "detail": null,                                       // Chi tiết
+        "detailValue": null,
+        "regulation": null,                                   // Quy định
+        "managementMeasures": null                            // Cơ sở đề xuất và biện pháp quản lý
+      }
+    ],
+    "additionalContents": [
+      {
+        "id": null,
+        "contentType": null,
+        "criteriaGroup": null,                                // Nhóm tiêu chí
+        "criteriaGroupValue": null,
+        "detail": null,                                       // Chi tiết
+        "detailValue": null,
+        "regulation": null,                                   // Quy định
+        "managementMeasures": null,                           // Cơ sở đề xuất và biện pháp quản lý
+        "authorization": null,                                // Thẩm quyền
+        "authorizationValue": null
+      }
+    ],
+    "otherReviews": [
+      {
+        "approvalPosition": null,                             // Cấp phê duyệt
+        "contentDetail": null                                 // Chi tiết nội dung
+      }
+    ],
+    "creditConditions": [
+      {
+        "id": null,
+        "segment": null,
+        "group": null,                                        // Nhóm điều kiện
+        "groupValue": null,
+        "code": null,                                         // Mã điều kiện
+        "codeValue": null,
+        "detail": null,                                       // Điều kiện chi tiết
+        "timeOfControl": null,                                // Thời điểm kiểm soát
+        "timeOfControlValue": null,
+        "applicableSubject": null,                            // Đối tượng áp dụng
+        "applicableSubjectValue": null,
+        "controlUnit": null,                                  // ĐV kiểm soát
+        "controlUnitValue": null,
+        "timeControlDisburse": null                           // Thơi điểm kiểm soát kể từ thời điểm giải ngân
+      }
+    ],
+    "phoneExpertise": {
+      "ext": null,                                             // Số máy lẻ CBTĐ
+      "phoneExpertiseDtls": [
+        {
+          "id": null,
+          "personAnswer": null,                                 // Người trả lời điện thoại
+          "phoneNumber": null,                                  // Số điện thoại
+          "calledAt": null,                                     // Thời gian gọi
+          "note": null                                          // Ghi chú
+        }
+      ]
+    },
+    "proposalApprovalPosition": null,                         // Cấp phê duyệt đề xuất
+    "loanApprovalPosition": null,                             // Cấp phê duyệt khoản vay
+    "effectivePeriod": null,                                  // Thời gian hiệu lực kể từ ngày ký văn bản phê duyệt
+    "effectivePeriodUnit": null                               // Đơn vị thời gian hiệu lực
+  }
+}

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: bpm-approval-rb-service
+  config:
+    import: optional:configserver:${CONFIG_SERVER:http://centralize-configuration.bpm.apps.ocp-nonprod.msb.com.vn/}
+  cloud:
+    config:
+      fail-fast: true
+      username: ${CONFIG_USER:bpm}
+      password: ${CONFIG_PASSWORD:Bpm@2021}
+  profiles:
+    active: ${ENVIRONMENT:local}

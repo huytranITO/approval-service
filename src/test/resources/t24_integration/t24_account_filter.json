@@ -1,0 +1,84 @@
+{
+  "listOfCAAccounts": [
+    {
+      "accountNumber": "80000001403",
+      "accountName": "TK TT",
+      "acctType": "D",
+      "productType": "RB.CA.NORMAL",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "0",
+      "status": "ACTIVE"
+    },
+    {
+      "accountNumber": "80000001405",
+      "accountName": "NAM HAI",
+      "acctType": "D",
+      "productType": "RB.CA.NORMAL",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "1000000000",
+      "status": "ACTIVE"
+    },
+    {
+      "accountNumber": "80000001669",
+      "accountName": "NAM HAI",
+      "acctType": "D",
+      "productType": "RB.CA.GIAINGAN",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "125222222",
+      "status": "ACTIVE"
+    },
+    {
+      "accountNumber": "80000001726",
+      "accountName": "NAM HAI",
+      "acctType": "D",
+      "productType": "RB.CA.GIAINGAN",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "0",
+      "status": "ACTIVE"
+    },
+    {
+      "accountNumber": "80000001911",
+      "accountName": "NAM HAI",
+      "acctType": "D",
+      "productType": "RB.CA.GIAINGAN",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "0",
+      "status": "ACTIVE"
+    },
+    {
+      "accountNumber": "80000002398",
+      "accountName": "NAM HAI",
+      "acctType": "D",
+      "productType": "RB.CA.GIAINGAN",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "0",
+      "status": "ACTIVE"
+    },
+    {
+      "accountNumber": "80000002418",
+      "accountName": "NAM HAI",
+      "acctType": "D",
+      "productType": "RB.CA.GIAINGAN",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "0",
+      "status": "ACTIVE"
+    },
+    {
+      "accountNumber": "80000003154",
+      "accountName": "NAM HAI",
+      "acctType": "D",
+      "productType": "RB.CA.GIAINGAN",
+      "currency": "VND",
+      "relationShip": "OWNER",
+      "avaiableBalance": "0",
+      "status": "ACTIVE"
+    }
+  ]
+}

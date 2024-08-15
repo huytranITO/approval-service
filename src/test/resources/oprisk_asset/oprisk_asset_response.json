@@ -1,0 +1,32 @@
+{
+  "code": "AS-000",
+  "message": "Thành công",
+  "data": [
+    {
+      "applicationId": "151-00009948",
+      "identifierCode": "TP TCTP1",
+      "queryType": "OPR_ASSET",
+      "resultCode": "0",
+      "resultDescription": "Không thuộc danh sách",
+      "reasonInList": null,
+      "startDate": null,
+      "endDate": null,
+      "assetGroup": "V009",
+      "assetType": "V301",
+      "createdAt": "07/03/2024 13:25:14"
+    },
+    {
+      "applicationId": "151-00009948",
+      "identifierCode": "TP TCTP2",
+      "queryType": "OPR_ASSET",
+      "resultCode": "0",
+      "resultDescription": "Không thuộc danh sách",
+      "reasonInList": null,
+      "startDate": null,
+      "endDate": null,
+      "assetGroup": "V009",
+      "assetType": "V301",
+      "createdAt": "07/03/2024 13:25:15"
+    }
+  ]
+}

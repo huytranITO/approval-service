@@ -1,0 +1,26 @@
+{
+  "personal": {
+    "email": "outsource.tester12@msb.com.vn",
+    "phoneNumber": "0976079664",
+    "fullName": "phạm thị thiết",
+    "user": {
+      "id": 5574,
+      "bdsId": null,
+      "email": null,
+      "enabled": null,
+      "phoneNumber": null,
+      "username": null,
+      "uniqueId": null
+    },
+    "uniqueId": "1234736544"
+  },
+  "user": {
+    "id": 5574,
+    "bdsId": "hoatt21",
+    "email": "outsource.tester12@msb.com.vn",
+    "enabled": true,
+    "phoneNumber": "0976079664",
+    "username": "thietpt",
+    "uniqueId": null
+  }
+}

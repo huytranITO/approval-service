@@ -1,0 +1,18 @@
+{
+  "id": 41952,
+  "queryType": "OPR_ASSET",
+  "resultCode": "-1",
+  "resultDescription": "Không thuộc danh sách",
+  "resultOnBlackList": null,
+  "subject": null,
+  "identifierCode": "Tài sản Tony 1",
+  "startDate": null,
+  "endDate": null,
+  "orderDisplay": null,
+  "assetGroup": "V001",
+  "assetType": "V401",
+  "createdBy": "cj_bo_rm01",
+  "createdAt": "2023-11-06T17:19:55",
+  "updatedBy": "cj_bo_rm01",
+  "updatedAt": "2024-03-07T13:25:24"
+}

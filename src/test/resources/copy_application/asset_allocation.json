@@ -1,0 +1,242 @@
+{
+  "assetAllocation": [
+    {
+      "assetId": 760,
+      "creditAllocations": [
+        {
+          "id": 880,
+          "creditId": 13229,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 13.0
+        },
+        {
+          "id": 883,
+          "creditId": 13232,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 12.0
+        },
+        {
+          "id": 882,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 10.0
+        },
+        {
+          "id": 881,
+          "creditId": 13233,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 11.0
+        }
+      ]
+    },
+    {
+      "assetId": 761,
+      "creditAllocations": [
+        {
+          "id": 876,
+          "creditId": 13233,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 16.0
+        },
+        {
+          "id": 877,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 15.0
+        },
+        {
+          "id": 879,
+          "creditId": 13229,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 18.0
+        },
+        {
+          "id": 878,
+          "creditId": 13232,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 17.0
+        }
+      ]
+    },
+    {
+      "assetId": 762,
+      "creditAllocations": [
+        {
+          "id": 874,
+          "creditId": 13233,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 20.0
+        },
+        {
+          "id": 873,
+          "creditId": 13232,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 21.0
+        },
+        {
+          "id": 875,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 19.0
+        }
+      ]
+    },
+    {
+      "assetId": 763,
+      "creditAllocations": [
+        {
+          "id": 887,
+          "creditId": 13229,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 25.0
+        },
+        {
+          "id": 885,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 22.0
+        },
+        {
+          "id": 886,
+          "creditId": 13232,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 24.0
+        },
+        {
+          "id": 884,
+          "creditId": 13233,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 23.0
+        }
+      ]
+    },
+    {
+      "assetId": 764,
+      "creditAllocations": [
+        {
+          "id": 871,
+          "creditId": 13233,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 27.0
+        },
+        {
+          "id": 872,
+          "creditId": 13232,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 28.0
+        },
+        {
+          "id": 870,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 26.0
+        }
+      ]
+    },
+    {
+      "assetId": 765,
+      "creditAllocations": [
+        {
+          "id": 888,
+          "creditId": 13233,
+          "creditType": "V002",
+          "creditTypeValue": "Thấu chi",
+          "percentValue": 30.0
+        },
+        {
+          "id": 889,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 29.0
+        }
+      ]
+    },
+    {
+      "assetId": 766,
+      "creditAllocations": [
+        {
+          "id": 891,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 31.0
+        }
+      ]
+    },
+    {
+      "assetId": 767,
+      "creditAllocations": [
+        {
+          "id": 890,
+          "creditId": 13231,
+          "creditType": "V001",
+          "creditTypeValue": "Cho vay",
+          "percentValue": 32.0
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "credit": 13232,
+      "assets": [
+        760,
+        761,
+        762,
+        763,
+        764
+      ]
+    },
+    {
+      "credit": 13233,
+      "assets": [
+        760,
+        761,
+        762,
+        763,
+        764,
+        765
+      ]
+    },
+    {
+      "credit": 13229,
+      "assets": [
+        760,
+        761,
+        763
+      ]
+    },
+    {
+      "credit": 13231,
+      "assets": [
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767
+      ]
+    }
+  ]
+}

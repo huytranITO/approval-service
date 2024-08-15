@@ -1,0 +1,17 @@
+@startuml
+skin rose
+participant RM
+participant RB_APPROVAL_FE
+participant RB_APPROVAL_BE
+database APPROVAL_DB
+
+RM -> RB_APPROVAL_FE: choose application
+alt valid
+    RB_APPROVAL_FE -> RB_APPROVAL_BE: call api "/api/v1/application/{bpmId}/detail"
+    RB_APPROVAL_BE -> APPROVAL_DB: get data
+    APPROVAL_DB --> RB_APPROVAL_BE: return response
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return response
+else invalid
+    RB_APPROVAL_BE --> RB_APPROVAL_FE: return error code
+end
+@enduml

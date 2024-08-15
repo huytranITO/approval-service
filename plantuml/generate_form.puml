@@ -1,0 +1,55 @@
+@startuml
+skin rose
+
+participant Client
+participant ApprovalService
+participant Checklist
+participant RuleMapping
+participant Kafka
+participant FormTemplateService
+participant MinIO
+Database DBFormTemplate
+
+== REQUEST ==
+Client -> ApprovalService: approval application
+ApprovalService -> Checklist: get by requestCode
+ApprovalService <-- Checklist: return list checklists
+ApprovalService -> RuleMapping: Call form template rule
+ApprovalService <-- RuleMapping: Return list template code
+ApprovalService -> ApprovalService: mapping template code with checklist code
+ApprovalService -> FormTemplateService: generate list form template with checklistInfo
+ApprovalService <-- FormTemplateService: accept request
+ApprovalService -> ApprovalService: update application status to PROCESSING_TEMPLATE
+Client <-- ApprovalService: accept request
+
+== GENERATE ==
+FormTemplateService -> DBFormTemplate: get template by code&active
+FormTemplateService <-- DBFormTemplate: return
+
+
+alt success
+alt loop generete form
+FormTemplateService -> MinIO: get file template
+FormTemplateService -> FormTemplateService: binding data to template
+FormTemplateService -> MinIO: upload file after binding data
+end
+
+FormTemplateService -> Kafka: List checklist with File
+activate Kafka
+else Has one template doesn't exists or inactive
+FormTemplateService -> Kafka: generate file error
+end
+
+ApprovalService -> Kafka: consume result
+deactivate Kafka
+alt Generate Success
+ApprovalService -> Checklist: save checklist file info
+ApprovalService <-- Checklist: return
+ApprovalService -> FormTemplateService: send email notification success
+
+else Generate Failed
+ApprovalService -> ApprovalService: update status application to draft
+ApprovalService -> FormTemplateService: send email notification fail
+
+end
+@enduml

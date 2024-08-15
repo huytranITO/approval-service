@@ -1,0 +1,33 @@
+@startuml
+
+participant "FE DigiLending" as FE
+participant "Approval svc" as ApprovalService
+participant "Collateral svc" as CollateralService
+database "Approval" as ApprovalDB
+
+ref over FE, ApprovalService
+    Truy cập màn hình tab thông tin tài sản bảo đảm
+end
+FE -> ApprovalService: Call api (/approval-service/api/v1/application/{bpmId}/oprisk-detail)
+ApprovalService -> ApprovalDB: Tìm kiếm bản ghi Application theo bpmId
+ApprovalDB --> ApprovalService: Trả về thông tin bản ghi
+
+alt "Có tồn tại bản ghi"
+  ApprovalService -> ApprovalDB: Tìm kiếm thông tin bản ghi Oprisk tài sản
+  ApprovalDB --> ApprovalService: Trả về thông tin bản ghi
+
+  alt "Tồn tại bản ghi"
+  ApprovalService --> FE: Trả về thông tin chi tiết oprisk tài sản
+  else "Không có bản ghi"
+  ApprovalService -> CollateralService: call api (/internal/get-data-oprisk)
+  CollateralService --> ApprovalService: Trả về thông tin bản ghi oprisk tài sản
+  ApprovalService -> ApprovalDB: Lưu đồng bộ thông tin tra cứu Oprisk tài sản
+  ApprovalDB --> ApprovalService: Trả về thông tin chi tiết oprisk tài sản
+  ApprovalService --> FE: Trả về thông tin chi tiết Oprisk tài sản
+
+  end
+else "Không có bản ghi"
+  ApprovalService --> FE: Thông báo lỗi không tìm thấy thông tin hồ sơ
+end
+
+@enduml

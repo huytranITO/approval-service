@@ -1,0 +1,11 @@
+{
+  "buildFile": "config/docker/Dockerfile",
+  "buildMachine": "ocp2",
+  "buildImagesName": "bpm/approval-service",
+  "deployMachine": "ocp",
+  "deployImagesName": "default-route-openshift-image-registry.apps.ocp-nonprod.msb.com.vn:443/bpm/approval-service",
+  "deployContainerName": "",
+  "deployComposeFile": "",
+  "deployFile": "dev/bpm/approval-service/approval-service.yml",
+  "internalImagesName": "image-registry.openshift-image-registry.svc:5000/bpm/approval-service"
+}

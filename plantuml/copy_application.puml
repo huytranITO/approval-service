@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+participant FE
+participant "Customer Additional" as CustomerService
+participant "Approval Service" as AppSrv
+participant "Collateral Service" as CollateralService
+participant "Checklist Service" as ChecklistService
+
+autonumber
+group Tìm kiếm thông tin khách hàng
+FE -> CustomerService: Search Customer Info(with CIF or IdentityNumber)
+CustomerService --> FE: Customer Info Result (bmpCif)
+end
+group Tìm kiếm thông tin hồ sơ cũ
+FE -> AppSrv: Call approval-service/api/v1/application/by-customer
+AppSrv --> FE: Danh sách hồ sơ của customer (theo bpmCif + user login RM)
+end
+group Call other systems
+FE -> AppSrv: Copy Application (approval-service/api/v1/application/{bpmId cần copy}/copy)
+AppSrv -> AppSrv: Tạo Id hồ sơ mới với data hồ sơ cũ được lưu ở Approval
+AppSrv -> CollateralService: Get asset info của hồ sơ cũ (GET: bpm-collateral/asset/view)
+CollateralService --> AppSrv: <<return data>> Thông tin tài sản của hồ sơ cũ
+AppSrv -> CollateralService: Create Asset Info for new application (PUT: bpm-collateral/asset/update)
+AppSrv -> CollateralService: Get Asset Allocation of old application (GET: /bpm-collateral/internal/asset-allocation/view?applicationId={applicationId}&businessType={businessType}")
+CollateralService --> AppSrv: <<return data>> Asset Allocation of old application
+AppSrv -> CollateralService: Create Asset Allocation of new application (POST: /bpm-collateral/internal/asset-allocation/saveAssets?applicationId={applicationId})
+AppSrv -> ChecklistService: Get Check list of old application (POST: checklist/api/common/v2/checklist/reload)
+ChecklistService --> AppSrv: <<return data>> Checklist of old application
+AppSrv -> ChecklistService: Create check list of new application (POST: checklist/api/common/v2/checklist/reload)
+ChecklistService --> AppSrv: <<return data>> Checklist of new application
+AppSrv -> AppSrv: Copy file from old application to new application
+AppSrv -> ChecklistService: Update File Checklist for new application (POST: checklist/api/common/v1/checklist/upload-file)
+end
+AppSrv --> FE: Thông tin hồ sơ mới
+
+@enduml

@@ -1,0 +1,184 @@
+{
+  "customerId": 85,
+  "relationships": [
+    {
+      "relatedCustomerId": 2772,
+      "relatedCustomerName": "Giờ là ManhNV8 rùi nhé ahihi",
+      "relatedCustomerType": "EB",
+      "relatedIdentity": "9466",
+      "relatedIdentityType": "BR",
+      "active": true,
+      "bpmCif": "00002772",
+      "cif": "",
+      "version": "8",
+      "relationshipDetails": [
+        {
+          "id": 5048,
+          "relationshipType": "MANAGEMENT",
+          "positions": null,
+          "contributionRatio": null,
+          "relatedDetail": "R5",
+          "relatedInverse": "R16"
+        }
+      ]
+    },
+    {
+      "relatedCustomerId": 2498,
+      "relatedCustomerName": "Thao test gop KH ABC",
+      "relatedCustomerType": "RB",
+      "relatedIdentity": "011523647895",
+      "relatedIdentityType": "IDC",
+      "active": true,
+      "bpmCif": "00002498",
+      "cif": "100125",
+      "version": "19",
+      "relationshipDetails": [
+        {
+          "id": 4630,
+          "relationshipType": "OWNERSHIP",
+          "positions": "CSH",
+          "contributionRatio": null,
+          "relatedDetail": "R14",
+          "relatedInverse": "R5"
+        },
+        {
+          "id": 4628,
+          "relationshipType": "OWNERSHIP",
+          "positions": "DNLQ",
+          "contributionRatio": null,
+          "relatedDetail": "R17",
+          "relatedInverse": "R5"
+        },
+        {
+          "id": 4624,
+          "relationshipType": "FAMILY",
+          "positions": "NKS",
+          "contributionRatio": 1.11,
+          "relatedDetail": "R9",
+          "relatedInverse": "R5"
+        }
+      ]
+    },
+    {
+      "relatedCustomerId": 293,
+      "relatedCustomerName": "0000000000000333333",
+      "relatedCustomerType": "RB",
+      "relatedIdentity": "162381762",
+      "relatedIdentityType": "IP",
+      "active": true,
+      "bpmCif": "00000293",
+      "cif": "333333",
+      "version": "1",
+      "relationshipDetails": [
+        {
+          "id": 4626,
+          "relationshipType": "FAMILY",
+          "positions": "NKS",
+          "contributionRatio": 1.11,
+          "relatedDetail": "R9",
+          "relatedInverse": "R5"
+        }
+      ]
+    },
+    {
+      "relatedCustomerId": 304,
+      "relatedCustomerName": "hoa test 123",
+      "relatedCustomerType": "RB",
+      "relatedIdentity": "lk06ll5",
+      "relatedIdentityType": "IP",
+      "active": true,
+      "bpmCif": "00000304",
+      "cif": "",
+      "version": "1",
+      "relationshipDetails": [
+        {
+          "id": 4623,
+          "relationshipType": "MSB",
+          "positions": "NKS",
+          "contributionRatio": 1.22,
+          "relatedDetail": "R42",
+          "relatedInverse": null
+        },
+        {
+          "id": 4621,
+          "relationshipType": "FAMILY",
+          "positions": "NKS",
+          "contributionRatio": 1.11,
+          "relatedDetail": "R9",
+          "relatedInverse": "R5"
+        }
+      ]
+    },
+    {
+      "relatedCustomerId": 184,
+      "relatedCustomerName": "Nguyễn Văn Mạnh",
+      "relatedCustomerType": "RB",
+      "relatedIdentity": "213213",
+      "relatedIdentityType": "CMND",
+      "active": true,
+      "bpmCif": "00000184",
+      "cif": "",
+      "version": "1",
+      "relationshipDetails": [
+        {
+          "id": 4619,
+          "relationshipType": "FAMILY",
+          "positions": "NKS",
+          "contributionRatio": 1.11,
+          "relatedDetail": "R9",
+          "relatedInverse": "R5"
+        }
+      ]
+    },
+    {
+      "relatedCustomerId": 133,
+      "relatedCustomerName": "Triệu Thị Hòa",
+      "relatedCustomerType": "RB",
+      "relatedIdentity": "036197001235",
+      "relatedIdentityType": "IDC",
+      "active": true,
+      "bpmCif": "00000133",
+      "cif": "",
+      "version": "1",
+      "relationshipDetails": [
+        {
+          "id": 4617,
+          "relationshipType": "FAMILY",
+          "positions": "NKS",
+          "contributionRatio": 1.11,
+          "relatedDetail": "R9",
+          "relatedInverse": "R5"
+        }
+      ]
+    },
+    {
+      "relatedCustomerId": 96,
+      "relatedCustomerName": "Nguyễn Thị B1",
+      "relatedCustomerType": "RB",
+      "relatedIdentity": "1A1111111",
+      "relatedIdentityType": "IDC",
+      "active": true,
+      "bpmCif": "106",
+      "cif": "",
+      "version": "1",
+      "relationshipDetails": [
+        {
+          "id": 4616,
+          "relationshipType": "MSB",
+          "positions": "NKS,CSH,BLĐ,TVGV,DNLQ,CNLQ",
+          "contributionRatio": 55.0,
+          "relatedDetail": "R42",
+          "relatedInverse": ""
+        },
+        {
+          "id": 4614,
+          "relationshipType": "FAMILY",
+          "positions": "CSH,NKS",
+          "contributionRatio": 11.11,
+          "relatedDetail": "R9",
+          "relatedInverse": "R5"
+        }
+      ]
+    }
+  ]
+}

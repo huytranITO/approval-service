@@ -1,0 +1,25 @@
+package com.msb.bpm.approval.appr.enums.email;
+
+/**
+ * @author : Hoang Anh Tuan (CN-SHQLQT)
+ * @mailto : tuanha13@msb.com.vn
+ * @created : 19/5/2023, Friday
+ **/
+public enum EventCodeEmailType {
+  RM_SUBMIT,
+  BM_RETURN,
+  CONTACT_RETURN,
+  APPROVER_RETURN,
+  BM_ENDORSE,
+  TEAM_LEAD_ASSIGN_CONTACT,
+  TEAM_LEAD_ASSIGN_APPROVER,
+  APPROVER_ESCALATE,
+  APPROVER_APPROVE,
+  CLOSE,
+  FINISH_GENERATE_TEMPLATE,
+  LDP_NOTICE_FEEDBACK,
+  LDP_SEND_CONFIRM_CUSTOMER,
+  LDP_SEND_FEEDBACK_CUSTOMER,
+  CARD_SEND_FEEDBACK_CUSTOMER,
+  ;
+}

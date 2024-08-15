@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <springProperty scope="context" name="app_name" source="spring.application.name"/>
+  <property name="pattern_log"
+    value="%d{yyyy-MM-dd HH:mm:ss.SSS} | %p | ${PID:- } | ${app_name} | %t | %X{traceId:- } | %X{spanId:- } | %c{1} | %m%n"/>
+
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${pattern_log}</pattern>
+    </encoder>
+    <target>System.out</target>
+  </appender>
+
+  <root level="info">
+    <appender-ref ref="console"/>
+  </root>
+  <logger name="org.apache" level="ERROR" additivity="false">
+    <appender-ref ref="console"/>
+  </logger>
+  <logger name="org.apache.kafka.clients.NetworkClient" level="ERROR" additivity="false">
+    <appender-ref ref="console"/>
+  </logger>
+
+
+</configuration>

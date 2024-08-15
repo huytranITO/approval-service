@@ -1,0 +1,26 @@
+[
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": null,
+    "relationship": "V001",
+    "relationshipTxt": null,
+    "fullName": "THIET",
+    "phoneNumber": "0989",
+    "orderDisplay": 0
+  },
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": null,
+    "relationship": "V003",
+    "relationshipTxt": null,
+    "fullName": "NG VAN C",
+    "phoneNumber": "09000",
+    "orderDisplay": 1
+  }
+]

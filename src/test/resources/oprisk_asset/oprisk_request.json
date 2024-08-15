@@ -1,0 +1,15 @@
+{
+  "applicationId": "151-00009948",
+  "assetData": [
+    {
+      "certificate": "TP TCTP1",
+      "assetType": "V301",
+      "assetGroup": "V009"
+    },
+    {
+      "certificate": "TP TCTP2",
+      "assetType": "V301",
+      "assetGroup": "V009"
+    }
+  ]
+}

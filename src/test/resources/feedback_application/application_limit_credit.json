@@ -1,0 +1,50 @@
+[
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": null,
+    "application": null,
+    "loanLimit": "RECOMMEND",
+    "loanLimitValue": "Đề xuất lần này",
+    "loanProductCollateral": null,
+    "otherLoanProductCollateral": 509290,
+    "unsecureProduct": null,
+    "otherUnsecureProduct": 947000000,
+    "total": 947509290,
+    "orderDisplay": 2
+  },
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": null,
+    "application": null,
+    "loanLimit": "CURRENT",
+    "loanLimitValue": "Đã cấp hiện hữu",
+    "loanProductCollateral": null,
+    "otherLoanProductCollateral": null,
+    "unsecureProduct": null,
+    "otherUnsecureProduct": null,
+    "total": 0,
+    "orderDisplay": 0
+  },
+  {
+    "createdBy": null,
+    "createdAt": null,
+    "updatedBy": null,
+    "updatedAt": null,
+    "id": null,
+    "application": null,
+    "loanLimit": "PRE_APPROVE",
+    "loanLimitValue": "Phê duyệt trước",
+    "loanProductCollateral": null,
+    "otherLoanProductCollateral": null,
+    "unsecureProduct": null,
+    "otherUnsecureProduct": null,
+    "total": 0,
+    "orderDisplay": 1
+  }
+]
